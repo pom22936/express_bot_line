@@ -7,7 +7,7 @@ const AIMLParser = require('aimlparser')
 
 const app = express()
 const port = process.env.PORT || 4000
-const aimlParser = new AIMLParser({ name:'HelloBot' })
+const aimlParser = new AIMLParser({ name:'node_bot' })
 
 aimlParser.load(['./test-aiml.xml'])
 
