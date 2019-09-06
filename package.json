@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/pom22936/express_bot_line#readme",
   "dependencies": {
+    "aimlinterpreter": "^0.1.7",
+    "aimlparser": "^1.0.5",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "request": "^2.88.0"
