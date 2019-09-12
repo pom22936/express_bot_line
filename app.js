@@ -46,14 +46,14 @@ function reply(reply_token, msg) {
                     type: "carousel",
                     columns: [
                         {
-                            thumbnailImageUrl: "https://example.com/bot/images/item1.jpg",
+                            thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
                             imageBackgroundColor: "#FFFFFF",
-                            title: "this is menu",
-                            text: "description",
+                            title: "hi i'm bot server1",
+                            text: "สวัสดีครับ มีอะไรให้ผมรับใช้ครับ",
                             defaultAction: {
                                 type: "uri",
                                 label: "View detail",
-                                uri: "http://example.com/page/123"
+                                uri: "https://www.google.com/"
                             },
                             actions: [
                                 {
@@ -74,14 +74,14 @@ function reply(reply_token, msg) {
                             ]
                         },
                         {
-                            thumbnailImageUrl: "https://example.com/bot/images/item2.jpg",
+                            thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
                             imageBackgroundColor: "#000000",
-                            title: "this is menu",
-                            text: "description",
+                            title: "hi i'm bot server2",
+                            text: "สวัสดีครับ มีอะไรให้ผมรับใช้ครับ",
                             defaultAction: {
                                 type: "uri",
                                 label: "View detail",
-                                uri: "http://example.com/page/222"
+                                uri: "https://www.google.com/"
                             },
                             actions: [
                                 {
