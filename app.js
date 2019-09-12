@@ -40,26 +40,56 @@ function reply(reply_token, msg) {
                 text: msg
             },
             {
-                type: "template",
-                altText: "this is a buttons template",
                 template: {
-                    type: "buttons",
-                    thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
-                    title: "HI i'm Bot Naja",
-                    text: "สวัสดีครับ มีอะไรให้ผมรับใช้ครับ",
-                    actions: [{
-                        type: "message",
-                        label: "check port",
-                        text: "check port"
-                    }, {
-                        type: "message",
-                        label: "check dns",
-                        text: "check dns"
-                    }, {
-                        type: "message",
-                        label: "check utilize",
-                        text: "check utilize"
-                    }]
+                    type: "carousel",
+                    columns: [
+                        {
+                            type: "template",
+                            altText: "this is a buttons template",
+                            template: {
+                                type: "buttons",
+                                thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
+                                title: "HI i'm Bot Server1",
+                                text: "สวัสดีครับ มีอะไรให้ผมรับใช้ครับ",
+                                actions: [{
+                                    type: "message",
+                                    label: "check port",
+                                    text: "check port"
+                                }, {
+                                    type: "message",
+                                    label: "check dns",
+                                    text: "check dns"
+                                }, {
+                                    type: "message",
+                                    label: "check utilize",
+                                    text: "check utilize"
+                                }]
+                            }
+                        },
+                        {
+                            type: "template",
+                            altText: "this is a buttons template",
+                            template: {
+                                type: "buttons",
+                                thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
+                                title: "HI i'm Bot Server2",
+                                text: "สวัสดีครับ มีอะไรให้ผมรับใช้ครับ",
+                                actions: [{
+                                    type: "message",
+                                    label: "check port",
+                                    text: "check port"
+                                }, {
+                                    type: "message",
+                                    label: "check dns",
+                                    text: "check dns"
+                                }, {
+                                    type: "message",
+                                    label: "check utilize",
+                                    text: "check utilize"
+                                }]
+                            }
+                        }
+                    ]
                 }
             }
         ]
