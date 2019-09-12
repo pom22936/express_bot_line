@@ -20,9 +20,7 @@ app.get('/', (req, res) => {
 app.post('/webhook', (req, res) => {
     let reply_token = req.body.events[0].replyToken
     let msg = req.body.events[0].message.text
-    aimlParser.getResult(msg, (answer, wildCardArray, input) => {
-            reply(reply_token, answer)
-        })
+    reply(reply_token, msg)
     res.sendStatus(200)
 })
 
@@ -42,25 +40,25 @@ function reply(reply_token, msg) {
                 text: msg
             },
             {
-                "type": "template",
-                "altText": "this is a buttons template",
-                "template": {
-                    "type": "buttons",
-                    "thumbnailImageUrl": "https://www.thesun.co.uk/wp-content/uploads/2017/03/fifa-17-2.jpg?strip=all&w=742&quality=100",
-                    "title": "Menu",
-                    "text": "Please select",
-                    "actions": [{
-                        "type": "postback",
-                        "label": "Buy",
-                        "data": "action=buy&itemid=123"
+                type: "template",
+                altText: "this is a buttons template",
+                template: {
+                    type: "buttons",
+                    thumbnailImageUrl: "https://www.thesun.co.uk/wp-content/uploads/2017/03/fifa-17-2.jpg?strip=all&w=742&quality=100",
+                    title: "Menu",
+                    text: "Please select",
+                    actions: [{
+                        type: "postback",
+                        label: "Buy",
+                        data: "action=buy&itemid=123"
                     }, {
-                        "type": "postback",
-                        "label": "Add to cart",
-                        "data": "action=add&itemid=123"
+                        type: "postback",
+                        label: "Add to cart",
+                        data: "action=add&itemid=123"
                     }, {
-                        "type": "uri",
-                        "label": "View detail",
-                        "uri": "http://localhost:8080"
+                        type: "uri",
+                        label: "View detail",
+                        uri: "http://localhost:8080"
                     }]
                 }
             }
