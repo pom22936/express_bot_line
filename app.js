@@ -44,21 +44,21 @@ function reply(reply_token, msg) {
                 altText: "this is a buttons template",
                 template: {
                     type: "buttons",
-                    thumbnailImageUrl: "https://www.thesun.co.uk/wp-content/uploads/2017/03/fifa-17-2.jpg?strip=all&w=742&quality=100",
-                    title: "Menu",
-                    text: "Please select",
+                    thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
+                    title: "HI i'm Bot Naja",
+                    text: "สวัสดีครับ มีอะไรให้ผมรับใช้ครับ",
                     actions: [{
-                        type: "postback",
-                        label: "Buy",
-                        data: "action=buy&itemid=123"
+                        type: "message",
+                        label: "check port",
+                        text: "check port"
                     }, {
-                        type: "postback",
-                        label: "Add to cart",
-                        data: "action=add&itemid=123"
+                        type: "message",
+                        label: "check dns",
+                        text: "check dns"
                     }, {
-                        type: "uri",
-                        label: "View detail",
-                        uri: "http://localhost:8080"
+                        type: "message",
+                        label: "check utilize",
+                        text: "check utilize"
                     }]
                 }
             }
