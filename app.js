@@ -41,25 +41,55 @@ function reply(reply_token, msg) {
             },
             {
                 type: "template",
-                altText: "this is a buttons template",
+                altText: "this is a carousel template",
                 template: {
-                    type: "buttons",
-                    thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
-                    title: "HI i'm Bot Naja",
-                    text: "สวัสดีครับ มีอะไรให้ผมรับใช้ครับ",
-                    actions: [{
-                        type: "message",
-                        label: "check port",
-                        text: "check port"
-                    }, {
-                        type: "message",
-                        label: "check dns",
-                        text: "check dns"
-                    }, {
-                        type: "message",
-                        label: "check utilize",
-                        text: "check utilize"
-                    }]
+                    type: "carousel",
+                    columns: [
+                        {
+                            thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
+                            title: "this is menu1",
+                            text: "description",
+                            actions: [
+                                {
+                                    type: "message",
+                                    label: "check port",
+                                    data: "check port"
+                                },
+                                {
+                                    type: "message",
+                                    label: "check dns",
+                                    data: "check dns"
+                                },
+                                {
+                                    type: "message",
+                                    label: "check utilize",
+                                    uri: "check utilize"
+                                }
+                            ]
+                        },
+                        {
+                            thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
+                            title: "this is menu2",
+                            text: "description",
+                            actions: [
+                                {
+                                    type: "postback",
+                                    label: "check port",
+                                    data: "check port"
+                                },
+                                {
+                                    type: "postback",
+                                    label: "check dns",
+                                    data: "check dns"
+                                },
+                                {
+                                    type: "uri",
+                                    label: "check utilize",
+                                    uri: "check utilize"
+                                }
+                            ]
+                        }
+                    ]
                 }
             }
         ]
