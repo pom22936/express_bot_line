@@ -46,50 +46,64 @@ function reply(reply_token, msg) {
                     type: "carousel",
                     columns: [
                         {
-                            thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
-                            title: "this is menu1",
+                            thumbnailImageUrl: "https://example.com/bot/images/item1.jpg",
+                            imageBackgroundColor: "#FFFFFF",
+                            title: "this is menu",
                             text: "description",
+                            defaultAction: {
+                                type: "uri",
+                                label: "View detail",
+                                uri: "http://example.com/page/123"
+                            },
                             actions: [
                                 {
                                     type: "message",
                                     label: "check port",
-                                    data: "check port"
+                                    text: "check port"
                                 },
                                 {
                                     type: "message",
                                     label: "check dns",
-                                    data: "check dns"
+                                    text: "check dns"
                                 },
                                 {
                                     type: "message",
                                     label: "check utilize",
-                                    uri: "check utilize"
+                                    text: "check utilize"
                                 }
                             ]
                         },
                         {
-                            thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
-                            title: "this is menu2",
+                            thumbnailImageUrl: "https://example.com/bot/images/item2.jpg",
+                            imageBackgroundColor: "#000000",
+                            title: "this is menu",
                             text: "description",
+                            defaultAction: {
+                                type: "uri",
+                                label: "View detail",
+                                uri: "http://example.com/page/222"
+                            },
                             actions: [
                                 {
-                                    type: "postback",
+                                    type: "message",
                                     label: "check port",
-                                    data: "check port"
+                                    text: "check port"
                                 },
                                 {
-                                    type: "postback",
+                                    type: "message",
                                     label: "check dns",
-                                    data: "check dns"
+                                    text: "check dns"
                                 },
                                 {
-                                    type: "uri",
+                                    type: "message",
                                     label: "check utilize",
-                                    uri: "check utilize"
+                                    text: "check utilize"
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    imageAspectRatio: "rectangle",
+                    imageSize: "cover"
                 }
             }
         ]
