@@ -46,7 +46,7 @@ function reply(reply_token, msg) {
                     type: "carousel",
                     columns: [
                         {
-                            thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
+                            thumbnailImageUrl: "https://image.shutterstock.com/image-illustration/3d-rendering-robot-working-virtual-600w-621862202.jpg",
                             imageBackgroundColor: "#FFFFFF",
                             title: "hi i'm bot server1",
                             text: "สวัสดีครับ มีอะไรให้ผมรับใช้ครับ",
@@ -74,7 +74,7 @@ function reply(reply_token, msg) {
                             ]
                         },
                         {
-                            thumbnailImageUrl: "https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png",
+                            thumbnailImageUrl: "https://image.shutterstock.com/image-illustration/3d-rendering-robot-working-virtual-600w-621862202.jpg",
                             imageBackgroundColor: "#000000",
                             title: "hi i'm bot server2",
                             text: "สวัสดีครับ มีอะไรให้ผมรับใช้ครับ",
